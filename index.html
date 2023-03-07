@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <h1>Agora Chat Support <span class="loginname">dd</span></h1>
+
+  <meta charset="UTF-8">
+  <title>Agora Chat Examples</title>
+  <script type="module" src="/main.js"></script>
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <div class="formdiv">
+    <div class="conter" id="loginform">
+      <h1>Login</h1>
+      <form>
+          <div class="txt_field">
+              <input type="text" required id="userId">
+              <span></span>
+              <label >UserName</label>
+          </div>
+          <div class="txt_field">
+              <input type="password" required id="password">
+              <span></span>
+              <label >Password</label>
+          </div>
+          <button id="login" class="login">Login </button>
+      </form>
+  </div>
+</div>
+  <div class="wrapper" style="visibility:hidden;">
+    <div class="inner1">
+      <!-- <div class="container">
+          <img src="agent.png" alt="Agent">
+          <p>Hello. How are you today?</p>
+          <span class="time-right">11:00</span>
+        </div> -->
+    </div>
+    <div class="inner2">
+      <input type="text" class="message" id="peerMessage" placeholder="Enter message to send" />
+      <button id="send_peer_message">Send</button>
+    </div>
+    <h5 id="displayMsg" style="margin-left: 15px;margin-top: 2px;"></h5>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+/* Chat containers */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&display=swap');
+.main{
+width: 50%;
+position: absolute;
+top:250px;
+bottom: 0;
+left: 130px;
+right: 0;
+margin: auto;
+border: 1px solid black;
+height: 50%;
+overflow: scroll;
+}
+
+body{
+    margin: 0px;
+}
+
+h1 {text-align: center;
+background-color: honeydew;
+height: 50px;
+margin: 0;}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  
+  /* Darker chat container */
+  .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+  }
+  
+  /* Clear floats */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Style images */
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Style the right image */
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  .time-left {
+    float: left;
+    color: #999;
+  }
+
+.inner2 {
+  display: flex;
+}
+
+.inner1 {
+  display: grid !important;
+  overflow: scroll !important;
+}
+.message{
+  width: 100% !important;
+  padding: 10px;
+  margin: 10px 0;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  border-radius: 10px;
+}
+
+button{
+  width: auto;
+  padding: 10px;
+  margin: 10px 0;
+  margin-right: 10px !important;
+  border-radius: 10px;
+}
+
+
+button:hover
+{
+background-image:none;
+background-color:lightblue;
+}
+
+.loginname {
+  float: right;
+  margin: 10px;
+  font-size: large;
+}
+
+.formdiv {
+  width: 150px;
+  height: 100px;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif ;
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    height: 100vh;
+    overflow: hidden;
+}
+.conter{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+.conter h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.conter form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 100%;
+    padding:  0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+
+    width: 100%;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #2691d9
+    transparent 0.5s;
+}
+.signup_link{
+    margin: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+.signup_link a{
+    color: #2691d9;
+    text-decoration: none;
+}
+.signup_link a:hover{
+    text-decoration: underline;
+}
+
+.login {
+ margin-bottom: 15px;
+ width: 20%;
+}
