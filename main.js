@@ -185,8 +185,7 @@ loginUI[0].innerText = "";
 			.send(msg)
 			.then((res) => {
 				console.log("send private text success");
-
-            
+            document.getElementById("peerMessage").value ="";
 			})
 			.catch((error) => {
 				console.log("send private text fail", error);
